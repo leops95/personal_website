@@ -15,10 +15,35 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><span class="site-title">{{ site.title | default: site.github.repository_name }}</span></h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <div style="margin-top: 15px; text-align: center;">
+            Research Fellow, University of Basel
+          </div>
+          <div style="margin-top: 15px; text-align: center;">
+            Economics | Data science
+          </div>
+          <div style="margin-top: 20px; text-align: center;">
+            <a href="https://orcid.org/0000-0002-8885-3424" target="_blank" style="margin: 0 5px; display: inline-block;">
+              {% include svg/FaOrcid.svg %}
+            </a>
+              <a href="https://scholar.google.com/citations?user=m63wgm8AAAAJ&hl=en" target="_blank" style="margin: 0 5px; display: inline-block;">
+                {% include svg/FaGoogleScholar.svg %}
+              </a>
+            <a href="https://github.com/leops95" target="_blank" style="margin: 0 5px; display: inline-block;">
+              {% include svg/FaGithub.svg %}
+            </a>
+            <a href="https://linkedin.com/in/leopicard" target="_blank" style="margin: 0 5px; display: inline-block;">
+              {% include svg/FaLinkedin.svg %}
+            </a>
+            <a href="https://bsky.app/profile/leopicard.net" target="_blank" style="margin: 0 5px; display: inline-block;">
+              {% include svg/FaBluesky.svg %}
+            </a>
+            <a href="{{ '/uploads/cv_leopicard.pdf' | relative_url }}" target="_blank" style="margin: 0 5px; display: inline-block;">
+              {% include svg/TbFileCv.svg %}
+            </a>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -48,7 +73,7 @@
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>© {{ site.time | date: "%Y" }} Léo Picard &mdash; Portrait painted by <a href="https://www.instagram.com/jethrorazo/">Jethro Razo</a><br>Website layout adapted from the <a href="https://github.com/pages-themes/minimal">minimal</a> Jekyll theme</small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

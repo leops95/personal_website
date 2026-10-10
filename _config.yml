@@ -1,6 +1,7 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Léo Picard, PhD
+logo: /assets/img/Leo_small.jpg
+description: PhD Economist, Research Fellow at the University of Basel and Data Analyst at Galenica
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+url: "https://leopicard.net"
